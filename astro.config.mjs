@@ -1,12 +1,8 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 
-// https://astro.build/config
 export default defineConfig({
-   integrations: [react()], 
-  routes: [
-    // Otras rutas aquí
-    { match: '404', redirect: '/404' }
-  ]
-  
+  integrations: [react()],
+  output: 'static', // Add this for Cloudflare Pages
+  // For 404 handling, instead of using routes, create a 404.astro page
 });

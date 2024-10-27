@@ -1,13 +1,12 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [
-    "src"
-  ],
+  "include": ["src/**/*"],
   "compilerOptions": {
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
-      },
-    ]
-  },
+      }
+    ],
+    "jsx": "react-jsx"
+  }
 }

@@ -50,7 +50,7 @@ const { title, description, author, og } = Astro.props
   
 
   <title>{title}</title>  
-  <script type="application/ld+json">
+  <script type="application/ld+json" is:inline>
     {
       "@context": "https://schema.org/",
   "@type": "Store",
