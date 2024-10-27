@@ -7,7 +7,7 @@
     "fetch-images": "node fetchImages.js",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "yarn install && astro check && astro build",
     "deploy": "gh-pages -d dist",
     "preview": "astro preview",
     "astro": "astro"
